@@ -1,2 +1,5 @@
 raw/
 .DS_Store
+.wrangler/
+node_modules/
+.dev.vars

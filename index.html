@@ -1011,9 +1011,9 @@ function renderHours(){
 renderHours(); setInterval(renderHours,60000);
 
 /* ---------- Quote form ---------- */
-// Paste the Web3Forms access key (created for millerspaintingllc@gmail.com) here to send straight to the inbox.
-// While it's empty, the form falls back to opening the visitor's email app.
-const WEB3FORMS_KEY='';
+// Submissions go to our own Cloudflare Worker (worker/index.js), which emails them to the inbox.
+// Where the Worker isn't running (e.g. the GitHub Pages preview) the form falls back to the visitor's email app.
+const FORM_ENDPOINT='/api/contact';
 const form=document.getElementById('quoteForm');
 const $=id=>document.getElementById(id);
 const fName=$('f-name'),fPhone=$('f-phone'),fEmail=$('f-email');
@@ -1065,19 +1065,21 @@ form.addEventListener('submit',async e=>{
   const d=new FormData(form);
   if(d.get('botcheck')) return; // spam bot filled the hidden field
   const name=d.get('name').trim(), types=d.getAll('type').join(', ')||'Not specified';
-  const fields={Name:name,Phone:d.get('phone'),Email:d.get('email')||'(not given)',City:d.get('city'),Services:types,'Project details':d.get('message')||''};
+  const payload={name,phone:d.get('phone'),email:(d.get('email')||'').trim(),city:d.get('city'),services:types,message:d.get('message')||'',botcheck:''};
   const done=msg=>{form.querySelector('.form-body').style.display='none';if(msg)$('okMsg').innerHTML=msg;form.querySelector('.form-ok').classList.add('show');};
-  if(!WEB3FORMS_KEY){
-    const body=Object.entries(fields).map(([k,v])=>`${k}: ${v}`).join('\n');
+  const mailtoFallback=()=>{
+    const body=`Name: ${payload.name}\nPhone: ${payload.phone}\nEmail: ${payload.email||'(not given)'}\nCity: ${payload.city}\nServices: ${types}\n\nProject details:\n${payload.message}`;
     location.href='mailto:millerspaintingllc@gmail.com?subject='+encodeURIComponent('Estimate request from '+name)+'&body='+encodeURIComponent(body);
-    return done('Your email app should have opened with your request ready to send. Need us sooner? Call <a href="tel:+17728344675" style="color:var(--ocean);font-weight:700">(772) 834-4675</a>.');
-  }
+    done('Your email app should have opened with your request ready to send. Need us sooner? Call <a href="tel:+17728344675" style="color:var(--ocean);font-weight:700">(772) 834-4675</a>.');
+  };
   const btn=$('sendBtn'); btn.disabled=true; btn.querySelector('.lbl').textContent='Sending…';
   try{
-    const r=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},
-      body:JSON.stringify({access_key:WEB3FORMS_KEY,subject:'New estimate request from '+name,from_name:'Millers Painting website',replyto:d.get('email')||undefined,...fields})});
-    const j=await r.json();
-    if(!j.success) throw new Error(j.message||'Send failed');
+    let r;
+    try{ r=await fetch(FORM_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}); }
+    catch(netErr){ return mailtoFallback(); }               // offline or no server
+    if(r.status===404||r.status===405) return mailtoFallback(); // Worker not deployed here
+    const j=await r.json().catch(()=>({}));
+    if(!r.ok||!j.ok) throw new Error(j.error||'Send failed');
     done();
   }catch(err){
     $('formError').textContent='Sorry, your request didn\'t go through. Please try again or call (772) 834-4675.';

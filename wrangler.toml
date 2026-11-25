@@ -1,0 +1,21 @@
+# Cloudflare Worker for the Millers Painting site.
+# Serves the static site and emails estimate-form submissions via Email Routing.
+# Setup steps: see worker/README.md
+name = "millerspainting"
+main = "worker/index.js"
+compatibility_date = "2025-09-01"
+
+[assets]
+directory = "."
+binding = "ASSETS"
+
+[vars]
+# Must be an address on the domain that has Email Routing turned on.
+# It doesn't need a real mailbox. Change the domain once it's registered.
+FROM_ADDRESS = "website@millerspaintingfl.com"
+TO_ADDRESS = "millerspaintingllc@gmail.com"
+
+# Email can only be sent to addresses verified under Email Routing > Destination addresses.
+[[send_email]]
+name = "CONTACT_EMAIL"
+destination_address = "millerspaintingllc@gmail.com"
