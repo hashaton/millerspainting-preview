@@ -1,0 +1,972 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Millers Painting LLC | House Painters in Port St. Lucie, FL</title>
+<meta name="description" content="Family-owned interior, exterior and cabinet painting in Port St. Lucie and the Treasure Coast since 1992. 4.7★ on Google. Free estimates: (772) 834-4675.">
+<meta name="theme-color" content="#0f1d2e">
+<meta property="og:title" content="Millers Painting LLC | Port St. Lucie House Painters">
+<meta property="og:description" content="Interior, exterior & cabinet painting on the Treasure Coast. Husband-and-wife owned since 1992.">
+<meta property="og:image" content="images/hero.jpg">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HousePainter",
+  "name": "Millers Painting LLC",
+  "telephone": "+1-772-834-4675",
+  "email": "millerspaintingllc@gmail.com",
+  "foundingDate": "1992",
+  "areaServed": ["Port St. Lucie FL","Stuart FL","Fort Pierce FL","Jensen Beach FL","Palm City FL","Tradition FL"],
+  "address": {"@type":"PostalAddress","addressLocality":"Port St. Lucie","addressRegion":"FL","postalCode":"34953","addressCountry":"US"},
+  "openingHours": "Mo-Fr 08:00-17:00",
+  "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"58"}
+}
+</script>
+<style>
+:root{
+  --ink:#0d1b2a;
+  --navy:#13294b;
+  --navy-2:#1c3a63;
+  --ocean:#2c7aa3;
+  --ocean-2:#5aa6cb;
+  --mist:#e8f1f6;
+  --paper:#fbf8f3;
+  --sand:#f2ece2;
+  --line:#e4ddd1;
+  --brass:#c39a4f;
+  --text:#1a2533;
+  --muted:#5d6a7a;
+  --white:#fff;
+  --radius:18px;
+  --shadow:0 1px 2px rgba(13,27,42,.06),0 10px 30px -10px rgba(13,27,42,.18);
+  --shadow-lg:0 30px 60px -20px rgba(13,27,42,.35);
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --wrap:1200px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);color:var(--text);background:var(--paper);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ocean)}
+.eyebrow::before{content:"";width:28px;height:2px;background:currentColor;border-radius:2px}
+h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:-.015em;line-height:1.08;color:var(--ink)}
+h2{font-size:clamp(34px,4.6vw,56px)}
+h2 em,h1 em{font-style:italic;color:var(--ocean)}
+.lead{font-size:clamp(17px,1.6vw,19px);color:var(--muted);max-width:60ch}
+section{padding:clamp(80px,10vw,130px) 0;scroll-margin-top:70px}
+.sec-head{display:grid;gap:18px;margin-bottom:56px;max-width:760px}
+.sec-head.center{margin-inline:auto;text-align:center;justify-items:center}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 26px;border-radius:999px;font-weight:700;font-size:15.5px;letter-spacing:.01em;transition:transform .25s ease,background .25s ease,box-shadow .25s ease,color .25s;cursor:pointer;border:0;white-space:nowrap}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-primary{background:var(--ocean);color:#fff;box-shadow:0 10px 24px -10px rgba(44,122,163,.8)}
+.btn-primary:hover{background:#246a8f;transform:translateY(-2px)}
+.btn-light{background:#fff;color:var(--ink)}
+.btn-light:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.btn-ghost{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(6px)}
+.btn-ghost:hover{background:rgba(255,255,255,.2)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--navy-2);transform:translateY(-2px)}
+
+/* Top bar + header */
+.topbar{background:var(--ink);color:rgba(255,255,255,.78);font-size:13.5px}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:40px;gap:16px}
+.topbar a:hover{color:#fff}
+.topbar .tb-left{display:flex;gap:22px;align-items:center}
+.topbar .tb-left span{display:inline-flex;gap:8px;align-items:center}
+.topbar svg{width:14px;height:14px;opacity:.8}
+.stars{color:#f5b83d;letter-spacing:1px}
+header.site{position:sticky;top:0;z-index:50;background:rgba(251,248,243,.86);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s}
+header.site.scrolled{border-color:var(--line);box-shadow:0 6px 24px -18px rgba(13,27,42,.4)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px;gap:24px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-mark{width:46px;height:46px;flex:none}
+.brand-text{display:grid;line-height:1}
+.brand-text b{font-family:var(--serif);font-weight:600;font-size:23px;letter-spacing:.01em;color:var(--ink)}
+.brand-text small{font-size:10.5px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-top:5px}
+.nav-links{display:flex;gap:34px;font-weight:600;font-size:15px;color:#2c3a4b}
+.nav-links a{position:relative;padding:6px 0}
+.nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--ocean);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.nav-links a:hover::after{transform:scaleX(1)}
+.nav-cta{display:flex;align-items:center;gap:14px}
+.nav-phone{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--ink)}
+.nav-phone .ic{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--mist);color:var(--ocean)}
+.nav-phone .ic svg{width:17px;height:17px}
+.nav-phone small{display:block;font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.04em}
+.menu-btn{display:none;width:46px;height:46px;border-radius:12px;border:1px solid var(--line);background:#fff;align-items:center;justify-content:center;cursor:pointer}
+.menu-btn span{display:block;width:20px;height:2px;background:var(--ink);position:relative;transition:.3s}
+.menu-btn span::before,.menu-btn span::after{content:"";position:absolute;left:0;width:20px;height:2px;background:var(--ink);transition:.3s}
+.menu-btn span::before{top:-6px}.menu-btn span::after{top:6px}
+.menu-open .menu-btn span{background:transparent}
+.menu-open .menu-btn span::before{top:0;transform:rotate(45deg)}
+.menu-open .menu-btn span::after{top:0;transform:rotate(-45deg)}
+.mobile-menu{display:none}
+
+/* Hero */
+.hero{position:relative;min-height:min(88vh,860px);display:flex;align-items:flex-end;color:#fff;padding:0;overflow:hidden;isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:-2}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 40%;transform:scale(1.06);animation:heroZoom 14s ease-out forwards}
+@keyframes heroZoom{to{transform:scale(1)}}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:
+  linear-gradient(90deg,rgba(9,20,34,.88) 0%,rgba(9,20,34,.62) 42%,rgba(9,20,34,.12) 75%),
+  linear-gradient(0deg,rgba(9,20,34,.75) 0%,rgba(9,20,34,0) 45%)}
+.hero .wrap{width:100%;padding-top:120px;padding-bottom:70px;display:grid;grid-template-columns:1.25fr .75fr;align-items:end;gap:40px}
+.hero-badge{display:inline-flex;align-items:center;gap:10px;padding:8px 16px 8px 8px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(8px);font-size:13.5px;font-weight:600;margin-bottom:26px}
+.hero-badge b{background:var(--brass);color:var(--ink);padding:4px 10px;border-radius:999px;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase}
+.hero h1{color:#fff;font-size:clamp(44px,6.6vw,88px);line-height:1.0;max-width:12ch}
+.hero h1 em{color:#9fd3ec}
+.hero p.sub{font-size:clamp(17px,1.7vw,20px);color:rgba(255,255,255,.86);max-width:50ch;margin:24px 0 36px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px}
+.hero-card{background:rgba(255,255,255,.96);color:var(--text);border-radius:20px;padding:24px 24px 20px;box-shadow:var(--shadow-lg);max-width:360px;justify-self:end;animation:floatIn 1s .5s both cubic-bezier(.2,.8,.2,1)}
+@keyframes floatIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+.hero-card .q{font-family:var(--serif);font-size:18px;line-height:1.45;color:var(--ink);margin:10px 0 16px}
+.hero-card .who{display:flex;align-items:center;gap:12px;font-size:14px}
+.avatar{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-weight:700;color:#fff;background:var(--ocean);font-size:14px;flex:none}
+.who b{display:block;color:var(--ink)}
+.who small{color:var(--muted)}
+.g-logo{width:16px;height:16px;vertical-align:-3px}
+
+/* Trust strip */
+.trust{background:#fff;border-bottom:1px solid var(--line);padding:0}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.trust-item{display:flex;align-items:center;gap:16px;padding:30px 24px;border-left:1px solid var(--line)}
+.trust-item:first-child{border-left:0;padding-left:0}
+.trust-item .num{font-family:var(--serif);font-size:38px;font-weight:500;color:var(--ink);line-height:1}
+.trust-item .num sup{font-size:.5em;color:var(--brass)}
+.trust-item p{font-size:14px;color:var(--muted);line-height:1.35}
+.trust-item p b{display:block;color:var(--ink);font-size:15px}
+
+/* Services */
+.services{background:var(--paper)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.svc{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:transform .35s ease,box-shadow .35s ease;display:flex;flex-direction:column}
+.svc:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.svc-img{aspect-ratio:4/3;overflow:hidden;background:var(--sand)}
+.svc-img img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+.svc:hover .svc-img img{transform:scale(1.06)}
+.svc-body{padding:26px 26px 28px;display:grid;gap:10px;flex:1}
+.svc-num{font-size:12px;font-weight:800;letter-spacing:.18em;color:var(--brass)}
+.svc h3{font-size:26px}
+.svc p{color:var(--muted);font-size:15.5px}
+.svc ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.svc li{font-size:12.5px;font-weight:600;color:var(--navy-2);background:var(--mist);padding:6px 11px;border-radius:999px}
+.svc-mini{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:22px}
+.mini{display:flex;gap:16px;align-items:flex-start;padding:24px;border-radius:var(--radius);background:var(--sand)}
+.mini .ic{width:46px;height:46px;border-radius:12px;background:#fff;display:grid;place-items:center;color:var(--ocean);flex:none;box-shadow:var(--shadow)}
+.mini .ic svg{width:22px;height:22px}
+.mini h4{font-family:var(--serif);font-weight:500;font-size:20px;color:var(--ink);margin-bottom:4px}
+.mini p{font-size:14.5px;color:var(--muted)}
+
+/* Before / After */
+.ba{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.ba::after{content:"";position:absolute;right:-200px;top:-200px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(44,122,163,.35),transparent 70%);pointer-events:none}
+.ba h2{color:#fff}
+.ba h2 em{color:#9fd3ec}
+.ba .lead{color:rgba(255,255,255,.72)}
+.ba .eyebrow{color:#9fd3ec}
+.ba-grid{display:grid;grid-template-columns:.72fr 1.28fr;gap:64px;align-items:center;position:relative;z-index:1}
+.ba-points{list-style:none;display:grid;gap:18px;margin:34px 0 38px}
+.ba-points li{display:flex;gap:14px;align-items:flex-start;color:rgba(255,255,255,.85)}
+.ba-points li svg{width:22px;height:22px;color:var(--brass);flex:none;margin-top:2px}
+.tx-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.tx-tabs button{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);color:rgba(255,255,255,.78);padding:10px 16px;border-radius:999px;font-weight:700;font-size:14px;cursor:pointer;transition:.25s}
+.tx-tabs button:hover{background:rgba(255,255,255,.16);color:#fff}
+.tx-tabs button.on{background:#fff;color:var(--ink);border-color:#fff}
+.tx-pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tx-pair figure{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:4/3.4;background:#1b2b40;box-shadow:0 30px 60px -30px rgba(0,0,0,.7)}
+.tx-pair img{width:100%;height:100%;object-fit:cover;transition:opacity .35s}
+.tx-pair img.fading{opacity:0}
+.tag{position:absolute;top:14px;left:14px;padding:6px 12px;border-radius:999px;font-size:11.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;background:rgba(13,27,42,.78);backdrop-filter:blur(6px);color:#fff}
+.tag.a{background:var(--ocean)}
+.tx-cap{margin-top:16px;color:rgba(255,255,255,.7);font-size:15px;min-height:3em}
+@media (max-width:640px){.tx-pair{gap:8px}.tx-pair figure{border-radius:12px;aspect-ratio:3/4}.tag{top:8px;left:8px;font-size:10px;padding:5px 9px}}
+
+/* Gallery */
+.gallery-head{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:40px}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.filters button{border:1px solid var(--line);background:#fff;padding:10px 18px;border-radius:999px;font-size:14px;font-weight:700;color:var(--muted);cursor:pointer;transition:.25s}
+.filters button:hover{color:var(--ink);border-color:#cfc6b7}
+.filters button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.masonry{columns:3 300px;column-gap:18px}
+.tile{break-inside:avoid;margin-bottom:18px;border-radius:16px;overflow:hidden;position:relative;cursor:zoom-in;background:var(--sand);transition:opacity .35s, transform .35s}
+.tile img{width:100%;transition:transform .7s ease}
+.tile:hover img{transform:scale(1.04)}
+.tile figcaption{position:absolute;left:12px;bottom:12px;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.92);font-size:12.5px;font-weight:700;color:var(--ink);opacity:0;transform:translateY(8px);transition:.3s}
+.tile:hover figcaption{opacity:1;transform:none}
+.tile.hide{display:none}
+.lightbox{position:fixed;inset:0;z-index:100;background:rgba(8,15,25,.94);display:none;align-items:center;justify-content:center;padding:30px}
+.lightbox.open{display:flex;animation:fade .25s}
+@keyframes fade{from{opacity:0}}
+.lightbox img{max-width:min(1100px,100%);max-height:86vh;border-radius:12px;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.lb-btn{position:absolute;width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);color:#fff;display:grid;place-items:center;cursor:pointer;transition:.2s}
+.lb-btn:hover{background:rgba(255,255,255,.25)}
+.lb-btn svg{width:22px;height:22px}
+.lb-close{top:22px;right:22px}.lb-prev{left:22px;top:50%;transform:translateY(-50%)}.lb-next{right:22px;top:50%;transform:translateY(-50%)}
+.lb-cap{position:absolute;bottom:22px;left:0;right:0;text-align:center;color:rgba(255,255,255,.75);font-size:14px}
+
+/* About */
+.about{background:#fff}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.about-photos{position:relative;padding-bottom:70px;padding-right:60px}
+.about-photos .p1{border-radius:22px;overflow:hidden;box-shadow:var(--shadow-lg);aspect-ratio:4/5}
+.about-photos .p1 img{width:100%;height:100%;object-fit:cover}
+.about-photos .p2{position:absolute;right:0;bottom:0;width:52%;border-radius:18px;overflow:hidden;border:8px solid #fff;box-shadow:var(--shadow-lg);aspect-ratio:1}
+.about-photos .p2 img{width:100%;height:100%;object-fit:cover}
+.est{position:absolute;left:-22px;top:34px;background:var(--brass);color:var(--ink);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow-lg);text-align:center}
+.est b{display:block;font-family:var(--serif);font-size:40px;font-weight:500;line-height:1}
+.est small{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+.about-copy{display:grid;gap:22px}
+.about-copy p{color:var(--muted)}
+.sig{font-family:var(--serif);font-style:italic;font-size:26px;color:var(--ink)}
+.sig small{display:block;font-family:var(--sans);font-style:normal;font-size:13px;color:var(--muted);margin-top:2px}
+.values{display:grid;grid-template-columns:1fr 1fr;gap:14px 26px;margin:6px 0 8px}
+.values div{display:flex;gap:10px;align-items:center;font-weight:600;color:var(--ink);font-size:15.5px}
+.values svg{width:20px;height:20px;color:var(--ocean);flex:none}
+.bm{display:flex;align-items:center;gap:16px;padding:18px 20px;border-radius:14px;background:var(--paper);border:1px solid var(--line)}
+.bm .sw{display:flex}
+.bm .sw i{width:22px;height:36px;border-radius:4px;margin-right:-6px;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.12)}
+.bm p{font-size:14.5px;color:var(--muted)}
+.bm p b{color:var(--ink)}
+
+/* Process */
+.process{background:var(--sand)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:s}
+.step{background:#fff;border-radius:var(--radius);padding:30px 26px;position:relative;border:1px solid var(--line)}
+.step::before{counter-increment:s;content:"0" counter(s);font-family:var(--serif);font-size:52px;color:var(--mist);-webkit-text-stroke:1px var(--ocean-2);line-height:1;display:block;margin-bottom:18px}
+.step h3{font-size:22px;margin-bottom:8px}
+.step p{font-size:15px;color:var(--muted)}
+
+/* Reviews */
+.reviews{background:var(--paper)}
+.rating-panel{display:grid;grid-template-columns:auto 1fr auto;gap:40px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:22px;padding:32px 36px;margin-bottom:28px;box-shadow:var(--shadow)}
+.big-score{display:flex;align-items:center;gap:18px}
+.big-score b{font-family:var(--serif);font-size:68px;font-weight:500;line-height:1;color:var(--ink)}
+.big-score .stars{font-size:22px}
+.big-score small{display:block;color:var(--muted);font-size:14px}
+.highlights span{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.highlights ul{list-style:none;display:grid;gap:8px;margin-top:10px}
+.highlights li{font-family:var(--serif);font-size:17px;color:var(--ink);padding-left:16px;border-left:3px solid var(--ocean-2);line-height:1.4}
+.bar{display:grid;grid-template-columns:14px 1fr;gap:10px;align-items:center;font-size:12.5px;color:var(--muted);font-weight:600}
+.bar i{height:7px;border-radius:9px;background:var(--mist);overflow:hidden;position:relative}
+.bar i::after{content:"";position:absolute;inset:0;width:var(--w);background:#f5b83d;border-radius:9px}
+.platforms{display:grid;gap:10px}
+.plat{display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:12px;background:var(--paper);font-size:14px;font-weight:600}
+.plat svg{width:22px;height:22px;flex:none}
+.plat small{display:block;font-weight:500;color:var(--muted);font-size:12.5px}
+.rev-grid{columns:3 320px;column-gap:22px}
+.rev{break-inside:avoid;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:22px;display:grid;gap:16px;transition:transform .3s,box-shadow .3s}
+.rev:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.rev-top{display:flex;justify-content:space-between;align-items:center}
+.rev p{font-size:15.5px;color:#334155;line-height:1.65}
+.rev p::before{content:"\201C";font-family:var(--serif);font-size:54px;line-height:0;vertical-align:-22px;color:var(--ocean-2);margin-right:4px}
+.src{font-size:12px;font-weight:700;color:var(--muted);display:flex;align-items:center;gap:6px}
+.src svg{width:16px;height:16px}
+
+.more-rev{display:none;text-align:center;margin-top:8px}
+@media (max-width:640px){.rev-grid:not(.all) .rev:nth-child(n+5){display:none}.more-rev{display:block}.rev-grid.all+.more-rev{display:none}}
+/* Area */
+.area{background:#fff}
+.area-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:center}
+.towns{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:30px}
+.town{display:flex;align-items:center;gap:12px;padding:15px 18px;border-radius:14px;background:var(--paper);border:1px solid var(--line);font-weight:600;color:var(--ink)}
+.town svg{width:18px;height:18px;color:var(--ocean);flex:none}
+.map-card{position:relative;border-radius:24px;overflow:hidden;background:linear-gradient(160deg,#e9f3f8,#d4e7f1);aspect-ratio:1/1;box-shadow:var(--shadow-lg)}
+.map-card svg{width:100%;height:100%}
+.map-legend{position:absolute;left:20px;bottom:20px;background:#fff;border-radius:14px;padding:14px 18px;box-shadow:var(--shadow);font-size:14px}
+.map-legend b{display:block;font-family:var(--serif);font-size:19px;font-weight:500;color:var(--ink)}
+
+/* CTA band */
+.cta-band{padding:0;background:var(--paper)}
+.cta-inner{position:relative;border-radius:28px;overflow:hidden;color:#fff;padding:clamp(48px,7vw,86px);display:grid;grid-template-columns:1.3fr auto;gap:40px;align-items:center;isolation:isolate}
+.cta-inner img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.cta-inner::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,rgba(13,27,42,.94),rgba(19,41,75,.78) 55%,rgba(44,122,163,.5))}
+.cta-inner h2{color:#fff;font-size:clamp(32px,4vw,50px)}
+.cta-inner p{color:rgba(255,255,255,.8);margin-top:14px;max-width:52ch}
+.cta-actions{display:grid;gap:12px}
+
+/* Contact */
+.contact{background:var(--paper)}
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:start}
+.c-list{display:grid;gap:14px;margin-top:34px}
+.c-item{display:flex;gap:16px;align-items:center;padding:20px;border-radius:16px;background:#fff;border:1px solid var(--line);transition:.25s}
+a.c-item:hover{border-color:var(--ocean-2);transform:translateX(4px)}
+.c-item .ic{width:48px;height:48px;border-radius:14px;background:var(--mist);color:var(--ocean);display:grid;place-items:center;flex:none}
+.c-item .ic svg{width:22px;height:22px}
+.c-item small{display:block;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.c-item b{font-size:17px;color:var(--ink);word-break:break-word}
+form.quote{background:#fff;border:1px solid var(--line);border-radius:24px;padding:clamp(26px,4vw,44px);box-shadow:var(--shadow-lg)}
+form.quote h3{font-size:30px;margin-bottom:6px}
+form.quote > p{color:var(--muted);margin-bottom:28px;font-size:15.5px}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:grid;gap:7px}
+.field.full{grid-column:1/-1}
+.field label{font-size:13px;font-weight:700;color:var(--ink)}
+.field input,.field select,.field textarea{width:100%;padding:14px 16px;border-radius:12px;border:1.5px solid var(--line);background:var(--paper);transition:border-color .2s,background .2s,box-shadow .2s;font-size:15.5px}
+.field textarea{min-height:120px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--ocean);background:#fff;box-shadow:0 0 0 4px rgba(44,122,163,.12)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{cursor:pointer}
+.chips input{position:absolute;opacity:0;pointer-events:none}
+.chips span{display:inline-block;padding:10px 16px;border-radius:999px;border:1.5px solid var(--line);font-size:14px;font-weight:600;color:var(--muted);transition:.2s;background:var(--paper)}
+.chips input:checked+span{background:var(--ink);border-color:var(--ink);color:#fff}
+.chips input:focus-visible+span{box-shadow:0 0 0 4px rgba(44,122,163,.25)}
+form.quote .btn{width:100%;margin-top:22px;padding:18px}
+.form-note{font-size:13px;color:var(--muted);text-align:center;margin-top:12px}
+.form-ok{display:none;text-align:center;padding:40px 10px}
+.form-ok.show{display:block}
+.form-ok .check{width:72px;height:72px;margin:0 auto 20px;border-radius:50%;background:var(--mist);color:var(--ocean);display:grid;place-items:center}
+.form-ok .check svg{width:34px;height:34px}
+
+/* Footer */
+footer{background:var(--ink);color:rgba(255,255,255,.7);padding:80px 0 30px;font-size:15px}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding-bottom:50px;border-bottom:1px solid rgba(255,255,255,.1)}
+footer .brand-text b{color:#fff}
+footer .brand-text small{color:rgba(255,255,255,.5)}
+footer h5{font-family:var(--sans);font-size:12.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#fff;margin-bottom:18px}
+footer ul{list-style:none;display:grid;gap:10px}
+footer a:hover{color:#fff}
+.f-about{margin-top:18px;max-width:34ch}
+.socials{display:flex;gap:10px;margin-top:22px}
+.socials a{width:42px;height:42px;border-radius:12px;background:rgba(255,255,255,.08);display:grid;place-items:center;transition:.2s}
+.socials a:hover{background:var(--ocean)}
+.socials svg{width:19px;height:19px}
+.f-bottom{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:26px;font-size:13.5px;color:rgba(255,255,255,.5)}
+
+/* Mobile call bar */
+.callbar{display:none}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}html{scroll-behavior:auto}}
+
+/* Responsive */
+@media (max-width:1080px){
+  .nav-links{gap:24px}
+  .nav-phone small{display:none}
+  .hero .wrap{grid-template-columns:1fr}
+  .hero-card{justify-self:start}
+  .steps{grid-template-columns:1fr 1fr}
+  .rating-panel{grid-template-columns:1fr 1fr}
+  .platforms{grid-column:1/-1;grid-template-columns:1fr 1fr}
+}
+@media (max-width:920px){
+  .nav-links,.nav-cta .btn,.nav-phone{display:none}
+  .menu-btn{display:flex}
+  .mobile-menu{display:block;position:fixed;inset:78px 0 auto 0;background:var(--paper);border-bottom:1px solid var(--line);padding:10px 24px 28px;transform:translateY(-12px);opacity:0;pointer-events:none;transition:.3s;box-shadow:0 20px 40px -20px rgba(0,0,0,.3)}
+  .menu-open .mobile-menu{transform:none;opacity:1;pointer-events:auto}
+  .mobile-menu a{display:block;padding:15px 0;border-bottom:1px solid var(--line);font-family:var(--serif);font-size:22px;color:var(--ink)}
+  .mobile-menu .btn{margin-top:20px;width:100%}
+  .trust .wrap{grid-template-columns:1fr 1fr}
+  .trust-item{padding:24px 16px}
+  .trust-item:nth-child(3){border-left:0;padding-left:0}
+  .trust-item:nth-child(n+3){border-top:1px solid var(--line)}
+  .svc-grid,.svc-mini{grid-template-columns:1fr 1fr}
+  .ba-grid,.about-grid,.area-grid,.contact-grid{grid-template-columns:1fr;gap:48px}
+  .cta-inner{grid-template-columns:1fr}
+  .f-grid{grid-template-columns:1fr 1fr}
+  .about-photos{max-width:560px}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  .topbar .tb-left span:nth-child(2),.topbar .tb-right{display:none}
+  .topbar .wrap{justify-content:center}
+  .nav{height:70px}
+  .mobile-menu{inset:70px 0 auto 0}
+  .brand-mark{width:40px;height:40px}
+  .brand-text b{font-size:20px}
+  .hero{min-height:auto}
+  .hero .wrap{padding-top:90px;padding-bottom:40px}
+  .hero::before{background:linear-gradient(0deg,rgba(9,20,34,.92) 10%,rgba(9,20,34,.55) 60%,rgba(9,20,34,.35))}
+  .hero-actions .btn{flex:1 1 100%}
+  .hero-card{max-width:none}
+  .trust-item{flex-direction:column;align-items:flex-start;gap:8px}
+  .trust-item .num{font-size:32px}
+  .svc-grid,.svc-mini,.steps{grid-template-columns:1fr}
+  .masonry{columns:2 140px;column-gap:10px}
+  .tile{margin-bottom:10px;border-radius:12px}
+  .rating-panel{grid-template-columns:1fr;padding:24px;gap:24px}
+  .platforms{grid-template-columns:1fr}
+  .towns{grid-template-columns:1fr 1fr}
+  .town{padding:12px 12px;font-size:14.5px}
+  .fgrid{grid-template-columns:1fr}
+  .values{grid-template-columns:1fr}
+  .about-photos{padding-right:30px;padding-bottom:50px}
+  .est{left:-8px}
+  .f-grid{grid-template-columns:1fr}
+  .cta-inner{border-radius:20px}
+  .lb-prev,.lb-next{top:auto;bottom:20px;transform:none}
+  .lb-cap{bottom:90px}
+  .callbar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;gap:10px;transform:translateY(120%);transition:transform .4s}
+  .callbar.show{transform:none}
+  .callbar .btn{flex:1;padding:15px;box-shadow:0 12px 30px -8px rgba(0,0,0,.45)}
+  footer{padding-bottom:100px}
+}
+</style>
+</head>
+<body>
+
+<!-- Top bar -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="tb-left">
+      <span><span class="stars">★★★★★</span> 4.7 from 58 Google reviews</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Mon–Fri · 8 AM – 5 PM</span>
+    </div>
+    <div class="tb-right"><a href="mailto:millerspaintingllc@gmail.com">millerspaintingllc@gmail.com</a></div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="site" id="top">
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="Millers Painting LLC home">
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5aa6cb"/><stop offset="1" stop-color="#13294b"/></linearGradient></defs>
+        <circle cx="24" cy="24" r="23" fill="url(#lg)"/>
+        <path d="M8 29c5-7 11-9 17-6s9 2 15-3" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" opacity=".95"/>
+        <path d="M10 35c5-5 10-6 15-4s9 1 13-2" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+        <path d="M17 18l7-7 7 7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand-text"><b>Millers Painting</b><small>Est. 1992 · Port St. Lucie</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service Area</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:+17728344675">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1z"/></svg></span>
+        <span><small>Call for a free estimate</small>(772) 834-4675</span>
+      </a>
+      <a href="#contact" class="btn btn-dark">Free Estimate</a>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu">
+    <a href="#services">Services</a>
+    <a href="#work">Our Work</a>
+    <a href="#about">About</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#area">Service Area</a>
+    <a href="#contact" class="btn btn-primary">Get a Free Estimate</a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg"><img src="images/hero.jpg" alt="White Mediterranean-style home with freshly painted blue window trim" fetchpriority="high"></div>
+  <div class="wrap">
+    <div>
+      <div class="hero-badge"><b>Since 1992</b> Husband &amp; wife owned on the Treasure Coast</div>
+      <h1>Homes painted the way <em>you'd</em> paint your own.</h1>
+      <p class="sub">Interior, exterior and cabinet painting in Port St. Lucie and the surrounding Treasure Coast. Careful prep, premium Benjamin Moore paint, and an owner who answers the phone.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Get My Free Estimate
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="tel:+17728344675" class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1z"/></svg>
+          (772) 834-4675</a>
+      </div>
+    </div>
+    <aside class="hero-card" aria-label="Featured review">
+      <div class="stars">★★★★★</div>
+      <p class="q">“After meeting with several painters, we felt he offered the best value and came across as genuine and trustworthy.”</p>
+      <div class="who"><span class="avatar">G</span><span><b>Graziella B.</b><small><svg class="g-logo" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg> Exterior repaint · Google review</small></span></div>
+    </aside>
+  </div>
+</section>
+
+<!-- Trust strip -->
+<section class="trust" aria-label="Highlights">
+  <div class="wrap">
+    <div class="trust-item"><span class="num">30<sup>+</sup></span><p><b>Years painting</b>Family business since 1992</p></div>
+    <div class="trust-item"><span class="num">4.7<sup>★</sup></span><p><b>58 Google reviews</b>From real local homeowners</p></div>
+    <div class="trust-item"><span class="num">100<sup>%</sup></span><p><b>Recommended</b>By every Facebook reviewer</p></div>
+    <div class="trust-item"><span class="num">Top 3</span><p><b>In Port St. Lucie</b>BusinessRate 2025 award</p></div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">What we do</span>
+      <h2>Every surface, <em>done right</em> from prep to final coat.</h2>
+      <p class="lead">From full exterior repaints built to stand up to Florida sun and rain to cabinets that look factory-new, we handle the whole job, including the patching, priming and cleanup most painters skip.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc reveal">
+        <div class="svc-img"><img src="images/svc-exterior.jpg" alt="Freshly painted home exterior with blue trim" loading="lazy"></div>
+        <div class="svc-body">
+          <span class="svc-num">01 · EXTERIOR</span>
+          <h3>Exterior Painting</h3>
+          <p>Stucco, trim, doors, soffits and fascia. Pressure-clean, patch and prime first, then two coats made for the Florida climate.</p>
+          <ul><li>Stucco &amp; siding</li><li>Trim &amp; doors</li><li>Metal roofs</li></ul>
+        </div>
+      </article>
+      <article class="svc reveal d1">
+        <div class="svc-img"><img src="images/svc-interior.jpg" alt="Freshly painted interior room" loading="lazy"></div>
+        <div class="svc-body">
+          <span class="svc-num">02 · INTERIOR</span>
+          <h3>Interior Painting</h3>
+          <p>Walls, ceilings, trim and built-ins. Furniture and floors protected, every flaw repaired, and clean, straight lines throughout.</p>
+          <ul><li>Walls &amp; ceilings</li><li>Trim &amp; doors</li><li>Built-ins</li></ul>
+        </div>
+      </article>
+      <article class="svc reveal d2">
+        <div class="svc-img"><img src="images/svc-cabinets.jpg" alt="Kitchen cabinets refinished in crisp white" loading="lazy"></div>
+        <div class="svc-body">
+          <span class="svc-num">03 · CABINETS</span>
+          <h3>Cabinet Refinishing</h3>
+          <p>Give your kitchen or bath a brand-new look for a fraction of the cost of replacing it. Smooth, durable, factory-style finish.</p>
+          <ul><li>Kitchens</li><li>Islands</li><li>Bath vanities</li></ul>
+        </div>
+      </article>
+    </div>
+    <div class="svc-mini">
+      <div class="mini reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></span>
+        <div><h4>Ceilings &amp; Drywall</h4><p>Patch, skim and repaint ceilings and walls so repairs disappear.</p></div>
+      </div>
+      <div class="mini reveal d1">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20L10 4h4l6 16"/><path d="M12 8v2M12 13v2M12 18v1"/></svg></span>
+        <div><h4>Floors, Decks &amp; Coatings</h4><p>Garage floor and pool deck coatings, driveways, plus deck and floor staining.</p></div>
+      </div>
+      <div class="mini reveal d2">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 00-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 005.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></span>
+        <div><h4>Prep &amp; Repairs</h4><p>Stucco cracks, rotted wood and trim replaced before a drop of paint goes on.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Before / After -->
+<section class="ba" id="transform">
+  <div class="wrap ba-grid">
+    <div class="reveal">
+      <span class="eyebrow">See the difference</span>
+      <h2 style="margin-top:18px">Same house. <em>Whole new</em> curb appeal.</h2>
+      <p class="lead" style="margin-top:18px">Real projects from Treasure Coast homeowners. Tap through a few of our favorite transformations, from full exteriors to garage floors.</p>
+      <ul class="ba-points">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><b style="color:#fff">Thorough prep.</b> Pressure washing, patching and primer before any paint.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><b style="color:#fff">Your colors, your way.</b> Have a palette in mind or need help choosing? Either works.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><b style="color:#fff">Kept in the loop.</b> Clear updates from start to finish, even when the rain hits.</span></li>
+      </ul>
+      <a href="#contact" class="btn btn-light">Plan my project</a>
+    </div>
+    <div class="tx reveal d1">
+      <div class="tx-tabs" role="tablist" aria-label="Choose a transformation">
+        <button class="on" data-k="roof">Exterior &amp; Roof</button>
+        <button data-k="door">Front Door</button>
+        <button data-k="garage">Garage Door</button>
+        <button data-k="floor">Garage Floor</button>
+      </div>
+      <div class="tx-pair">
+        <figure><img id="txB" src="images/ba-roof-before.jpg" alt="Before"><span class="tag b">Before</span></figure>
+        <figure><img id="txA" src="images/ba-roof-after.jpg" alt="After"><span class="tag a">After</span></figure>
+      </div>
+      <p class="tx-cap" id="txCap">Chalky metal roof and tired stucco, refreshed with a bright white roof and crisp navy shutters.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section id="work">
+  <div class="wrap">
+    <div class="gallery-head">
+      <div class="sec-head reveal" style="margin:0">
+        <span class="eyebrow">Recent projects</span>
+        <h2>Our work speaks <em>for itself.</em></h2>
+      </div>
+      <div class="filters reveal" role="tablist" aria-label="Filter projects">
+        <button class="on" data-f="all">All</button>
+        <button data-f="exterior">Exterior</button>
+        <button data-f="interior">Interior</button>
+        <button data-f="cabinets">Cabinets</button>
+        <button data-f="floors">Floors &amp; Decks</button>
+      </div>
+    </div>
+    <div class="masonry" id="masonry"></div>
+    <div style="text-align:center;margin-top:34px"><a class="btn btn-dark" href="https://www.facebook.com/p/Millers-Painting-LLC-100086577200281/" target="_blank" rel="noopener">See more projects on Facebook</a></div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-photos reveal">
+      <div class="p1"><img src="images/about-1.jpg" alt="Finished exterior with blue French doors" loading="lazy"></div>
+      <div class="p2"><img src="images/about-2.jpg" alt="Kitchen island refinished in navy" loading="lazy"></div>
+      <div class="est"><b>1992</b><small>Established</small></div>
+    </div>
+    <div class="about-copy reveal d1">
+      <span class="eyebrow">Meet the Millers</span>
+      <h2>A family business that treats your home <em>like ours.</em></h2>
+      <p>Millers Painting is a husband-and-wife company run by Dennis and Robin Miller. When you call, you talk to the owners. When the work starts, Dennis is on site, often alongside his son. No subcontractor roulette.</p>
+      <p>We've been painting homes since 1992, and our approach hasn't changed: show up when we say we will, give you a fair, honest price, and don't call it done until every line is clean.</p>
+      <div class="values">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Owner on every job</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Free, honest estimates</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>On time, every time</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Spotless cleanup</div>
+      </div>
+      <div class="bm">
+        <span class="sw"><i style="background:#13294b"></i><i style="background:#2c7aa3"></i><i style="background:#c9dde6"></i><i style="background:#f4efe6"></i></span>
+        <p><b>We use Benjamin Moore products</b>: premium paint that covers better, lasts longer and holds its color in the Florida sun.</p>
+      </div>
+      <div class="sig">Dennis &amp; Robin Miller<small>Owners, Millers Painting LLC</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section class="process">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">How it works</span>
+      <h2>Simple, honest, <em>stress-free.</em></h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h3>Free estimate</h3><p>Call or send a request. We come out, walk the job with you and give you a clear, fair price.</p></div>
+      <div class="step reveal d1"><h3>Color &amp; schedule</h3><p>Pick your colors (we're happy to help) and lock in a start date that works for you.</p></div>
+      <div class="step reveal d2"><h3>Prep &amp; paint</h3><p>We protect your home, repair and prime every surface, then apply premium Benjamin Moore coats.</p></div>
+      <div class="step reveal d3"><h3>Final walkthrough</h3><p>We walk the finished job together and touch up anything until you're 100% happy.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Reviews</span>
+      <h2>Don't take our word for it. <em>Take theirs.</em></h2>
+    </div>
+    <div class="rating-panel reveal">
+      <div class="big-score"><b>4.7</b><div><span class="stars">★★★★★</span><small>58 reviews on Google</small></div></div>
+      <div class="highlights">
+        <span>What customers mention most</span>
+        <ul>
+          <li>“They respond quickly, do excellent work and are very honest people.”</li>
+          <li>“He finished the work in two days and he did an excellent job.”</li>
+          <li>“We absolutely love the new look and feel of our kitchen.”</li>
+        </ul>
+      </div>
+      <div class="platforms">
+        <div class="plat"><svg viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg><span>Google · 4.7 ★<small>58 reviews</small></span></div>
+        <div class="plat"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1877F2"/><path fill="#fff" d="M13.4 19v-6h2l.3-2.4h-2.3V9.2c0-.7.2-1.2 1.2-1.2h1.2V5.9c-.2 0-1-.1-1.8-.1-1.8 0-3 1.1-3 3.1v1.8H9V13h2v6z"/></svg><span>Facebook · 100%<small>Recommended</small></span></div>
+      </div>
+    </div>
+    <div class="rev-grid" id="revGrid"></div>
+    <div class="more-rev"><button class="btn btn-dark" id="moreRev">Show more reviews</button></div>
+  </div>
+</section>
+
+<!-- Service area -->
+<section class="area" id="area">
+  <div class="wrap area-grid">
+    <div class="reveal">
+      <span class="eyebrow">Service area</span>
+      <h2 style="margin-top:18px">Proudly serving the <em>Treasure Coast.</em></h2>
+      <p class="lead" style="margin-top:18px">Based in Port St. Lucie, we paint homes across St. Lucie and Martin counties. Not sure if you're in our area? Just give us a call.</p>
+      <div class="towns">
+        <div class="town"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 00-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/></svg>Port St. Lucie</div>
+        <div class="town"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 00-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/></svg>Tradition</div>
+        <div class="town"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 00-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/></svg>St. Lucie West</div>
+        <div class="town"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 00-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/></svg>Fort Pierce</div>
+        <div class="town"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 00-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/></svg>Stuart</div>
+        <div class="town"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 00-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/></svg>Jensen Beach</div>
+        <div class="town"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 00-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/></svg>Palm City</div>
+        <div class="town"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 00-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/></svg>Hutchinson Island</div>
+      </div>
+    </div>
+    <div class="map-card reveal d1" aria-label="Stylized map of the Treasure Coast service area">
+      <svg viewBox="0 0 400 400" role="img">
+        <defs>
+          <pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#9cc3d6" opacity=".5"/></pattern>
+          <radialGradient id="glow"><stop offset="0" stop-color="#2c7aa3" stop-opacity=".28"/><stop offset="1" stop-color="#2c7aa3" stop-opacity="0"/></radialGradient>
+        </defs>
+        <rect width="400" height="400" fill="url(#dots)"/>
+        <!-- land -->
+        <path d="M0 0H292C284 40 290 70 300 100C312 140 300 170 306 205C312 245 330 270 336 310C342 350 352 380 356 400H0Z" fill="#f7f3ea"/>
+        <!-- intracoastal -->
+        <path d="M296 0C290 50 300 80 312 115C322 150 312 180 318 215C326 255 342 285 348 325C352 355 360 380 364 400" fill="none" stroke="#bcd9e6" stroke-width="6"/>
+        <!-- barrier island -->
+        <path d="M322 0C318 60 330 110 340 160C350 210 352 260 366 320C372 350 378 380 382 400H392C388 360 382 320 376 280C366 220 360 160 350 110C342 70 336 30 334 0Z" fill="#efe9dc"/>
+        <!-- St Lucie river -->
+        <path d="M318 268C290 262 262 270 236 286C214 300 190 300 170 292" fill="none" stroke="#bcd9e6" stroke-width="8" stroke-linecap="round"/>
+        <!-- roads -->
+        <path d="M150 0C160 120 180 230 205 400" fill="none" stroke="#e3d8c4" stroke-width="5"/>
+        <path d="M230 0C240 120 250 230 280 400" fill="none" stroke="#e3d8c4" stroke-width="3"/>
+        <text x="138" y="40" font-size="10" fill="#b5a68b" font-family="Manrope" font-weight="700" transform="rotate(84 138 40)">I-95</text>
+        <!-- service radius -->
+        <circle cx="228" cy="190" r="150" fill="url(#glow)"/>
+        <circle cx="228" cy="190" r="150" fill="none" stroke="#2c7aa3" stroke-width="1.5" stroke-dasharray="5 6" opacity=".6"/>
+        <!-- towns -->
+        <g font-family="Manrope" font-weight="700" font-size="12" fill="#13294b">
+          <circle cx="262" cy="62" r="5" fill="#13294b"/><text x="252" y="58" text-anchor="end">Fort Pierce</text>
+          <circle cx="196" cy="196" r="5" fill="#13294b"/><text x="186" y="212" text-anchor="end">Tradition</text>
+          <circle cx="210" cy="146" r="5" fill="#13294b"/><text x="200" y="142" text-anchor="end">St. Lucie West</text>
+          <circle cx="306" cy="300" r="5" fill="#13294b"/><text x="306" y="322" text-anchor="middle">Stuart</text>
+          <circle cx="330" cy="252" r="5" fill="#13294b"/><text x="322" y="248" text-anchor="end">Jensen Beach</text>
+          <circle cx="250" cy="300" r="5" fill="#13294b"/><text x="240" y="318" text-anchor="end">Palm City</text>
+        </g>
+        <!-- HQ pin -->
+        <g transform="translate(246 168)">
+          <circle r="22" fill="#2c7aa3" opacity=".18"><animate attributeName="r" values="12;28;12" dur="2.6s" repeatCount="indefinite"/><animate attributeName="opacity" values=".35;0;.35" dur="2.6s" repeatCount="indefinite"/></circle>
+          <path d="M0-30a12 12 0 00-12 12C-12-6 0 6 0 6s12-12 12-24a12 12 0 00-12-12z" fill="#2c7aa3"/>
+          <circle cy="-18" r="4.5" fill="#fff"/>
+          <text x="18" y="-16" font-family="Fraunces" font-size="16" font-weight="600" fill="#0d1b2a">Port St. Lucie</text>
+        </g>
+        <text x="368" y="190" font-family="Manrope" font-size="10" font-weight="700" fill="#7fb0c8" letter-spacing="3" transform="rotate(80 368 190)">ATLANTIC OCEAN</text>
+      </svg>
+      <div class="map-legend"><b>Port St. Lucie HQ</b>Serving St. Lucie &amp; Martin counties</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA band -->
+<section class="cta-band">
+  <div class="wrap">
+    <div class="cta-inner reveal">
+      <img src="images/cta.jpg" alt="" loading="lazy">
+      <div>
+        <h2>Ready for a fresh coat?</h2>
+        <p>Estimates are always free and there's never any pressure. Let's talk about your home.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="tel:+17728344675" class="btn btn-light">Call (772) 834-4675</a>
+        <a href="#contact" class="btn btn-ghost">Request an estimate online</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <span class="eyebrow">Free estimate</span>
+      <h2 style="margin-top:18px">Let's get your project <em>on the calendar.</em></h2>
+      <p class="lead" style="margin-top:18px">Tell us a little about the job and we will get back to you soon.</p>
+      <div class="c-list">
+        <a class="c-item" href="tel:+17728344675"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1z"/></svg></span><span><small>Call or text</small><b>(772) 834-4675</b></span></a>
+        <a class="c-item" href="mailto:millerspaintingllc@gmail.com"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><span><small>Email</small><b>millerspaintingllc@gmail.com</b></span></a>
+        <div class="c-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span><small>Hours</small><b>Mon – Fri · 8 AM – 5 PM</b></span></div>
+      </div>
+    </div>
+    <form class="quote reveal d1" id="quoteForm" novalidate>
+      <div class="form-body">
+        <h3>Request a free estimate</h3>
+        <p>No pressure, no obligation. Takes about a minute.</p>
+        <div class="fgrid">
+          <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" required autocomplete="name" placeholder="Jane Smith"></div>
+          <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" required autocomplete="tel" placeholder="(772) 555-0123"></div>
+          <div class="field full"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@example.com"></div>
+          <div class="field full"><label>What can we help with?</label>
+            <div class="chips">
+              <label><input type="checkbox" name="type" value="Exterior"><span>Exterior</span></label>
+              <label><input type="checkbox" name="type" value="Interior"><span>Interior</span></label>
+              <label><input type="checkbox" name="type" value="Cabinets"><span>Cabinets</span></label>
+              <label><input type="checkbox" name="type" value="Ceilings / Drywall"><span>Ceilings / Drywall</span></label>
+              <label><input type="checkbox" name="type" value="Floors / Decks / Coatings"><span>Floors &amp; Decks</span></label>
+            </div>
+          </div>
+          <div class="field full"><label for="f-city">City</label>
+            <select id="f-city" name="city"><option>Port St. Lucie</option><option>Tradition</option><option>St. Lucie West</option><option>Fort Pierce</option><option>Stuart</option><option>Jensen Beach</option><option>Palm City</option><option>Other / not sure</option></select>
+          </div>
+          <div class="field full"><label for="f-msg">Project details</label><textarea id="f-msg" name="message" placeholder="e.g. 3-bedroom home, exterior repaint plus front door. Hoping to start in January."></textarea></div>
+        </div>
+        <button class="btn btn-primary" type="submit">Send my request
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <p class="form-note">Prefer to talk? Call <a href="tel:+17728344675" style="color:var(--ocean);font-weight:700">(772) 834-4675</a></p>
+      </div>
+      <div class="form-ok" role="status">
+        <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
+        <h3>Thank you!</h3>
+        <p style="color:var(--muted);margin-top:8px">Your email app should have opened with your request ready to send. We'll be in touch soon. Need us sooner? Call (772) 834-4675.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a href="#top" class="brand">
+          <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="url(#lg)"/><path d="M8 29c5-7 11-9 17-6s9 2 15-3" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/><path d="M10 35c5-5 10-6 15-4s9 1 13-2" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity=".55"/><path d="M17 18l7-7 7 7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="brand-text"><b>Millers Painting</b><small>Est. 1992 · Port St. Lucie</small></span>
+        </a>
+        <p class="f-about">Husband-and-wife owned interior, exterior and cabinet painting serving Port St. Lucie and the Treasure Coast.</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/p/Millers-Painting-LLC-100086577200281/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.9.3-1.5 1.5-1.5h1.5V4.4c-.3 0-1.2-.1-2.2-.1-2.2 0-3.8 1.4-3.8 3.9v2.3H8v3h2.5V21z"/></svg></a>
+          <a href="https://www.google.com/maps/place/Millers+Painting+LLC/@27.2517428,-80.3810991,17z/data=!4m6!3m5!1s0x29e116e0251e695:0xd03b95d05ef910e3!8m2!3d27.2517428!4d-80.3810991" target="_blank" rel="noopener" aria-label="Google reviews"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 10.2H12v3.9h5.5c-.5 2.5-2.7 4.1-5.5 4.1a6.2 6.2 0 010-12.4c1.5 0 2.9.6 4 1.5l2.9-2.9A10.2 10.2 0 0012 1.8a10.2 10.2 0 100 20.4c5.9 0 9.8-4.1 9.8-10 0-.7 0-1.3-.2-2z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul><li><a href="#services">Exterior Painting</a></li><li><a href="#services">Interior Painting</a></li><li><a href="#services">Cabinet Refinishing</a></li><li><a href="#services">Ceilings &amp; Drywall</a></li><li><a href="#services">Floors, Decks &amp; Coatings</a></li></ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul><li><a href="#about">About Us</a></li><li><a href="#work">Our Work</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#area">Service Area</a></li><li><a href="#contact">Free Estimate</a></li></ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul><li><a href="tel:+17728344675">(772) 834-4675</a></li><li><a href="mailto:millerspaintingllc@gmail.com">millerspaintingllc@gmail.com</a></li><li>Port St. Lucie, FL 34953</li><li>Mon–Fri · 8 AM – 5 PM</li></ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© <span id="yr">2026</span> Millers Painting LLC. All rights reserved.</span>
+      <span>Website by Figure 8 Websites</span>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar" id="callbar">
+  <a href="tel:+17728344675" class="btn btn-dark">Call Now</a>
+  <a href="#contact" class="btn btn-primary">Free Estimate</a>
+</div>
+
+<div class="lightbox" id="lightbox" aria-modal="true" role="dialog" aria-label="Project photo">
+  <button class="lb-btn lb-close" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <button class="lb-btn lb-prev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+  <img alt="">
+  <button class="lb-btn lb-next" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+  <div class="lb-cap"></div>
+</div>
+
+<script>
+/* ---------- Data ---------- */
+const GALLERY = [
+  {"f":"g01.jpg","c":"exterior","a":"Blue window trim on a Mediterranean home","l":"Window trim","w":1080,"h":1353},
+  {"f":"g02.jpg","c":"cabinets","a":"Kitchen cabinets refinished in white","l":"Kitchen cabinets","w":1080,"h":1353},
+  {"f":"g03.jpg","c":"exterior","a":"Cream stucco home with blue accents","l":"Exterior repaint","w":1400,"h":1050},
+  {"f":"g05.jpg","c":"floors","a":"Freshly coated pool deck","l":"Pool deck coating","w":1078,"h":1351},
+  {"f":"g04.jpg","c":"interior","a":"Bright interior with arched windows","l":"Interior walls","w":1080,"h":813},
+  {"f":"g07.jpg","c":"floors","a":"Stained wood porch deck","l":"Deck staining","w":1080,"h":1353},
+  {"f":"g06.jpg","c":"exterior","a":"Yellow homes with white metal roofs","l":"Exterior & roof","w":1400,"h":1050},
+  {"f":"g08.jpg","c":"cabinets","a":"White shaker kitchen cabinets","l":"Cabinet refinishing","w":1080,"h":1353},
+  {"f":"g09.jpg","c":"exterior","a":"Yellow home framed by palms","l":"Exterior repaint","w":1050,"h":1400},
+  {"f":"g12.jpg","c":"floors","a":"Flake-coated garage floor","l":"Garage floor coating","w":865,"h":1080},
+  {"f":"g10.jpg","c":"interior","a":"Built-in wall niches painted white","l":"Built-ins","w":1080,"h":813},
+  {"f":"g13.jpg","c":"cabinets","a":"Cream kitchen cabinets","l":"Kitchen cabinets","w":1080,"h":1353},
+  {"f":"g11.jpg","c":"exterior","a":"Mediterranean home with blue windows","l":"Trim & stucco","w":1080,"h":1353},
+  {"f":"g16.jpg","c":"cabinets","a":"Bathroom vanity refinished","l":"Bath vanity","w":1080,"h":1353},
+  {"f":"g15.jpg","c":"exterior","a":"Yellow home with white roof and palms","l":"Exterior & roof","w":1400,"h":1050},
+  {"f":"g14.jpg","c":"interior","a":"Entryway with arched window","l":"Entry & foyer","w":1094,"h":824},
+  {"f":"g17.jpg","c":"floors","a":"Stained porch and front entry","l":"Porch & entry","w":1080,"h":1353},
+  {"f":"g18.jpg","c":"interior","a":"Arched window with plantation shutters","l":"Interior trim","w":1080,"h":733}
+];
+
+const REVIEWS = [
+  {n:"Graziella B.", s:"Google", t:"Dennis did an amazing job painting the exterior of our home. Our home turned out exactly how we envisioned it. He was happy to work with the four colors we chose and kept us informed throughout the process. We're very pleased with the results and highly recommend Millers Painting LLC!"},
+  {n:"Rosie S.", s:"Facebook", t:"We called them for an estimate and Dennis came right away. They are reasonable, reliable and do a phenomenal job. Their attention to detail is extraordinary. We will definitely use them again."},
+  {n:"Janet S.", s:"Google", t:"Dennis and his son painted my kitchen island. I am extremely pleased with the results. They were always on time, polite and professional. Highly recommended."},
+  {n:"Beth H.", s:"Google", t:"The painter was incredibly talented and detail-oriented, and it really shows in the results. He took the time to repair every little flaw, making the walls and trim look brand new again. Moving forward Dennis is the go-to for future painting jobs in our home."},
+  {n:"Joel S.", s:"Google", t:"Dennis painted our kitchen cabinets and a bathroom cabinet. He completed the project to our total satisfaction and communicated with us very effectively from contract to completion. His professionalism shows up in the final product."},
+  {n:"Michael B.", s:"Facebook", t:"Being a new resident in Stuart, finding a reliable contractor is a difficult chore. Most I interviewed arrived late or did not show. Dennis arrived at the exact time he said he would, with a fair estimate and schedule. He and his crew met all of our expectations."},
+  {n:"Ann T.", s:"Google", t:"Millers Painting painted the exterior of our house, porch floor and two sheds. They did excellent work. Dennis ensured that all the work was high quality. I appreciate his attention to detail. The finished product is beautiful."},
+  {n:"Gail A.", s:"Google", t:"Dennis did a great job painting our ceilings, walls and woodwork in our great room and utility room. Professional and easy to work with. Pricing was better than other quotes we obtained."},
+  {n:"Pam H.", s:"Facebook", t:"Their professionalism, honesty and detailed work is like none other! It's so comforting working with a team that has your best interest at heart!! Will be back again!!"},
+  {n:"Jojo C.", s:"Google", t:"They painted my home with incredible attention to detail and treated it as if it were their own. They also sanded and stained my floors. If you're looking for a company that takes pride in their work, you won't be disappointed."},
+  {n:"Lisa D.", s:"Facebook", t:"Millers Painting just completed painting our entire condo. What a fantastic job they did from prep to painting. Dennis, the owner, is super easy to work with and the pricing was fair. I'm super picky and highly recommend them."},
+  {n:"Mel", s:"Google", t:"I would like to thank Millers Painting for the excellent job they did on the exterior of our home. The quality and care they took was exceptional. Thank you Dennis and Robin."},
+];
+
+/* ---------- Gallery ---------- */
+const masonry = document.getElementById('masonry');
+masonry.innerHTML = GALLERY.map((g,i)=>`<figure class="tile reveal" data-cat="${g.c}" data-i="${i}"><img src="images/${g.f}" alt="${g.a}" loading="lazy" width="${g.w}" height="${g.h}"><figcaption>${g.l}</figcaption></figure>`).join('');
+document.querySelectorAll('.filters button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.filters button').forEach(x=>x.classList.toggle('on',x===b));
+  const f=b.dataset.f;
+  document.querySelectorAll('.tile').forEach(t=>t.classList.toggle('hide',f!=='all'&&t.dataset.cat!==f));
+}));
+
+/* Lightbox */
+const lb=document.getElementById('lightbox'), lbImg=lb.querySelector('img'), lbCap=lb.querySelector('.lb-cap');
+let cur=0;
+const visible=()=>[...document.querySelectorAll('.tile:not(.hide)')].map(t=>+t.dataset.i);
+function show(i){cur=i;const g=GALLERY[i];lbImg.src='images/'+g.f;lbImg.alt=g.a;lbCap.textContent=g.l;}
+function step(d){const v=visible();let k=v.indexOf(cur)+d;k=(k+v.length)%v.length;show(v[k]);}
+masonry.addEventListener('click',e=>{const t=e.target.closest('.tile');if(!t)return;show(+t.dataset.i);lb.classList.add('open');document.body.style.overflow='hidden';});
+function closeLb(){lb.classList.remove('open');document.body.style.overflow='';}
+lb.querySelector('.lb-close').onclick=closeLb;
+lb.querySelector('.lb-prev').onclick=e=>{e.stopPropagation();step(-1)};
+lb.querySelector('.lb-next').onclick=e=>{e.stopPropagation();step(1)};
+lb.addEventListener('click',e=>{if(e.target===lb)closeLb();});
+document.addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')closeLb();if(e.key==='ArrowLeft')step(-1);if(e.key==='ArrowRight')step(1);});
+
+/* ---------- Reviews ---------- */
+const colors=['#2c7aa3','#13294b','#c39a4f','#3b8f7a','#7a5aa6','#b5573f'];
+const gIcon='<svg viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg>';
+const fIcon='<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1877F2"/><path fill="#fff" d="M13.4 19v-6h2l.3-2.4h-2.3V9.2c0-.7.2-1.2 1.2-1.2h1.2V5.9c-.2 0-1-.1-1.8-.1-1.8 0-3 1.1-3 3.1v1.8H9V13h2v6z"/></svg>';
+document.getElementById('revGrid').innerHTML=REVIEWS.map((r,i)=>`
+  <article class="rev reveal">
+    <div class="rev-top"><span class="stars">★★★★★</span><span class="src">${r.s==='Google'?gIcon:fIcon}${r.s}</span></div>
+    <p>${r.t}</p>
+    <div class="who"><span class="avatar" style="background:${colors[i%colors.length]}">${r.n[0]}</span><span><b>${r.n}</b><small>${r.s==='Google'?'Google review':'Recommends on Facebook'}</small></span></div>
+  </article>`).join('');
+
+document.getElementById('moreRev').onclick=()=>document.getElementById('revGrid').classList.add('all');
+
+/* ---------- Transformations ---------- */
+const TX={roof:"Chalky metal roof and tired stucco, refreshed with a bright white roof and crisp navy shutters.",
+door:"Faded blue double doors refinished in a rich, glossy black for instant curb appeal.",
+garage:"A weathered, peeling garage door brought back with a warm wood-tone finish.",
+floor:"Stained, oil-spotted concrete turned into a clean, durable flake-coated garage floor."};
+const txB=document.getElementById('txB'),txA=document.getElementById('txA'),txCap=document.getElementById('txCap');
+Object.keys(TX).forEach(k=>{[new Image(),new Image()].forEach((im,j)=>im.src=`images/ba-${k}-${j?'after':'before'}.jpg`)});
+document.querySelectorAll('.tx-tabs button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.tx-tabs button').forEach(x=>x.classList.toggle('on',x===b));
+  const k=b.dataset.k;[txB,txA].forEach(i=>i.classList.add('fading'));
+  setTimeout(()=>{txB.src=`images/ba-${k}-before.jpg`;txA.src=`images/ba-${k}-after.jpg`;txCap.textContent=TX[k];[txB,txA].forEach(i=>i.classList.remove('fading'));},250);
+}));
+
+/* ---------- Header, menu, callbar ---------- */
+const header=document.querySelector('header.site'), callbar=document.getElementById('callbar');
+const onScroll=()=>{header.classList.toggle('scrolled',scrollY>10);callbar.classList.toggle('show',scrollY>600);};
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+const mb=document.querySelector('.menu-btn');
+mb.addEventListener('click',()=>{const o=document.body.classList.toggle('menu-open');mb.setAttribute('aria-expanded',o);});
+document.querySelectorAll('.mobile-menu a').forEach(a=>a.addEventListener('click',()=>{document.body.classList.remove('menu-open');mb.setAttribute('aria-expanded',false);}));
+
+/* ---------- Reveal on scroll ---------- */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* ---------- Quote form (static: opens email app) ---------- */
+const form=document.getElementById('quoteForm');
+form.addEventListener('submit',e=>{
+  e.preventDefault();
+  const d=new FormData(form);
+  const name=(d.get('name')||'').trim(), phone=(d.get('phone')||'').trim();
+  if(!name||!phone){(name?form.querySelector('#f-phone'):form.querySelector('#f-name')).focus();form.querySelector(name?'#f-phone':'#f-name').style.borderColor='#c0392b';return;}
+  const types=d.getAll('type').join(', ')||'Not specified';
+  const body=`Name: ${name}\nPhone: ${phone}\nEmail: ${d.get('email')||''}\nCity: ${d.get('city')}\nServices: ${types}\n\nProject details:\n${d.get('message')||''}`;
+  location.href='mailto:millerspaintingllc@gmail.com?subject='+encodeURIComponent('Estimate request from '+name)+'&body='+encodeURIComponent(body);
+  form.querySelector('.form-body').style.display='none';
+  form.querySelector('.form-ok').classList.add('show');
+});
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
