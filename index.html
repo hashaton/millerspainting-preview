@@ -275,8 +275,10 @@ footer.site a:hover{text-decoration:underline}
   .wrap{padding:0 16px}
   section{padding:52px 0}
   .util .r{display:none}
-  .util .hol{padding-left:12px;font-size:12.5px}
-  .util .l{gap:12px}
+  .util .l{flex-wrap:wrap;gap:0 12px;padding:6px 0}
+  .util .status{font-size:12.5px}
+  .util .hol{font-size:12px;padding-left:0;border-left:0}
+  .util .status,.util .hol{white-space:nowrap}
   .nav{height:70px;gap:12px}
   .brand img{height:46px}
   .brand b{font-size:17px}
@@ -306,6 +308,7 @@ footer.site a:hover{text-decoration:underline}
   footer.site{padding-bottom:90px}
   .lb-prev,.lb-next{top:auto;bottom:60px}
 }
+@media (max-width:380px){.brand img{height:40px}.brand b{font-size:15px}.nav{gap:8px}}
 </style>
 </head>
 <body>
@@ -314,7 +317,7 @@ footer.site a:hover{text-decoration:underline}
   <div class="wrap">
     <div class="l">
       <span class="status"><i class="dot" data-open-dot></i><span data-open-status>Mon–Fri, 8 AM–5 PM</span></span>
-      <span class="hol">Holiday hours may be different</span>
+      <span class="hol">Holiday hours may vary</span>
     </div>
     <div class="r">
       <a href="mailto:millerspaintingllc@gmail.com">millerspaintingllc@gmail.com</a>
