@@ -76,6 +76,8 @@ section{padding:72px 0;scroll-margin-top:96px}
 .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#9aa5b1;flex:none}
 .dot.open{background:#3ccf7b}
 .dot.closed{background:#e0645a}
+.util .hol{color:#9fb2c4;padding-left:20px;border-left:1px solid rgba(255,255,255,.2)}
+.hol-note{color:var(--text)!important}
 
 /* Header */
 header.site{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
@@ -273,6 +275,8 @@ footer.site a:hover{text-decoration:underline}
   .wrap{padding:0 16px}
   section{padding:52px 0}
   .util .r{display:none}
+  .util .hol{padding-left:12px;font-size:12.5px}
+  .util .l{gap:12px}
   .nav{height:70px;gap:12px}
   .brand img{height:46px}
   .brand b{font-size:17px}
@@ -310,6 +314,7 @@ footer.site a:hover{text-decoration:underline}
   <div class="wrap">
     <div class="l">
       <span class="status"><i class="dot" data-open-dot></i><span data-open-status>Mon–Fri, 8 AM–5 PM</span></span>
+      <span class="hol">Holiday hours may be different</span>
     </div>
     <div class="r">
       <a href="mailto:millerspaintingllc@gmail.com">millerspaintingllc@gmail.com</a>
@@ -568,7 +573,7 @@ footer.site a:hover{text-decoration:underline}
         <h3>Hours</h3>
         <div class="open-line"><i class="dot" data-open-dot></i><span data-open-status>Mon–Fri, 8 AM–5 PM</span></div>
         <table class="hours" id="hoursTable" aria-label="Business hours"></table>
-        <p class="small">Eastern time. Holidays may differ.</p>
+        <p class="small hol-note">Eastern time. On holidays these hours and the open/closed status above may be off. Call to check.</p>
       </div>
     </div>
   </div>
